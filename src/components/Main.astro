@@ -1,0 +1,91 @@
+---
+import githubImage from '../assets/github.png'
+import htmlImage from '../assets/html.png'
+import cssImage from '../assets/css.jpeg'
+import javascriptImage from '../assets/javascript.jpeg'
+import typescriptImage from '../assets/typescript.png'
+import pythonImage from '../assets/python.webp'
+import csharpImage from '../assets/csharp.png'
+import reactImage from '../assets/react.png'
+import nodejsImage from '../assets/nodejs.png'
+import sqlImage from '../assets/sql.png'
+import powershellImage from '../assets/powershell.png'
+import dockerImage from '../assets/docker.png'
+import cplusplusImage from '../assets/cplusplus.png'
+import { Image } from 'astro:assets';
+---
+<div id="container">
+    <main>
+        <h1>Ryan O'Regan</h1>
+        <Image id="githubLogo" src={githubImage} alt="github logo" />
+        <p>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly. I attended the University of Canterbury from 2016 until 2019, and graduated in April 2020 with a Bachelor of Engineering with Honours specialising in Software Engineering.</p>
+
+        <h2>Links</h2>
+            <ul>
+                <li>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly.</li>
+                <li>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly.</li>
+                <li>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly.</li>
+                <li>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly.</li>
+            </ul>
+        <h2>Technologies</h2>
+        <div class="technologyImages">
+                <Image src={htmlImage} alt="github logo" />
+                <Image src={cssImage} alt="github logo" />
+                <Image src={javascriptImage} alt="github logo" />
+                <Image src={typescriptImage} alt="github logo" />
+                <Image src={pythonImage} alt="github logo" />
+                <Image src={csharpImage} alt="github logo" />
+                <Image src={reactImage} alt="github logo" />
+                <Image src={nodejsImage} alt="github logo" />
+                <Image src={sqlImage} alt="github logo" />
+                <Image src={powershellImage} alt="github logo" />
+                <Image src={dockerImage} alt="github logo" />
+                <Image src={cplusplusImage} alt="github logo" />
+        </div>
+    </main>
+
+    <aside>
+        <h2>Projects</h2>
+        <!-- Needs to be an accordian -->
+        <p>Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly. I attended the University of Canterbury from 2016 until 2019, and graduated in April 2020 with a Bachelor of Engineering with Honours specialising in Software Engineering.
+
+        Lorem ipsum, Hi! I'm Ollie, and I'm a Software Engineer at Partly. I attended the University of Canterbury from 2016 until 2019, and graduated in April 2020 with a Bachelor of Engineering with Honours specialising in Software Engineering.</p>
+    </aside>
+</div>
+
+<style>
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 28rem 28rem 1fr;
+        grid-template-rows: auto;
+    }
+    #githubLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .technologyImages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .technologyImages img {
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* Adjust this value as necessary for your images */
+    object-fit: contain;
+    }
+    
+    main {
+        grid-column: 2 / 3;
+        
+    }
+    aside {
+        grid-column: 3 /4;
+    }
+</style>
