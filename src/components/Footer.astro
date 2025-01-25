@@ -1,13 +1,32 @@
-<footer>Portfolio</footer>
+<footer>
+    <p>Website designed by Ryan O'Regan</p>
+    <p>&copy 2024 All rights reserved.</p>
+</footer>
+
+
+
 <style>
-    header {
-        background-color: darkgray;
-        height: 5%;
+    footer {
+        background-color: hsl(224, 14%, 14%);
+        width: 100%;
+        height: 5rem; /* Adjust this to control the footer's height */
         display: flex;
-        align-items: center;
+        justify-content: center; /* Center the text horizontally */
+        align-items: center; /* Center the text vertically */
+        flex-direction: column;
         font-size: larger;
         font-weight: bolder;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding-left: 1em;
+        position: fixed; /* Fix the footer at the bottom of the page */
+        bottom: 0; /* Position it at the very bottom */
+        border-top: 1px solid white;
+        font-size: 12px;
     }
+
+    footer p {
+    margin: 3px; /* Remove the default margin between p tags */
+    padding: 0; /* Remove any padding if needed */
+    }
+
 </style>
