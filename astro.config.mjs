@@ -7,4 +7,5 @@ export default defineConfig({
   integrations: [react()],
 
   site: "https://ryanoregan.github.io/Portfolio-Website/",
+  base: '/Portfolio-Website/',
 });

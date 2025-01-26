@@ -18,480 +18,484 @@ import workoutAppImage from'../assets/workoutApp.png'
 import CopyEmailButton from '../components/react/copyEmailButton'
 import { Image } from 'astro:assets';
 ---
-<div id="container">
-    <div id="title">
-        <h1>Ryan O'Regan</h1>
-        <a href="https://github.com/ryanoregan" target="_blank" rel="noopener noreferrer">
-            <Image id="githubLogo" src={githubImage} alt="GitHub logo" />
-        </a>
-        <p>📍Christchurch, New Zealand</p>
-    </div>
-    <div id="copyEmailButton">
-        <CopyEmailButton client:load/>
-        <a class="buttonStyle" href="example.com" target="_blank">About</a>
-        <a class="buttonStyle" href="https://www.linkedin.com/in/ryan-o-regan-67b55025b/" target="_blank">LinkedIn</a>
-        <a class="buttonStyle" href="https://www.instagram.com/rybeeee/" target="_blank">Instagram</a>
-        <a class="buttonStyle" href="https://leetcode.com/u/Ryan_ORegan/" target="_blank">LeetCode</a>
-    </div>
-    <div id ="intro">
-        <h1>👋 Hi there!</h1>
-        <p>Hi! I'm Ryan, and I'm a Data Technician at Elixir. I am pursuing my dream of being a full stack software engineer and graduated in November 2024 with a Graduate Diploma in ICT specialising in Software Engineering.</p>
-    </div>
-    <div id="stacks">
-        <h1>🛠️ My Tech Stacks</h1>
-        <h3>LAMP</h3>
-        <ul>
-            <li>Linux</li>
-            <li>Apache</li>
-            <li>MySQL</li>
-            <li>PHP</li>
-        </ul>
-    </div>
-    <div id="technologies">
-        <h2>📟 All Technologies</h2>
-        <div class="technologyImages">
-            <div class="inner-wrapper">
-                <!-- Original Images and their Blurbs -->
-                <div class="technology-item">
-                    <Image src={htmlImage} alt="HTML" />
-                    <div class="technology-blurb">HTML: A markup language for creating web pages</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={cssImage} alt="CSS" />
-                    <div class="technology-blurb">CSS: Style sheet language for designing web pages</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={javascriptImage} alt="JavaScript" />
-                    <div class="technology-blurb">JavaScript: Programming language for web development</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={typescriptImage} alt="TypeScript" />
-                    <div class="technology-blurb">TypeScript: A superset of JavaScript with static types</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={pythonImage} alt="Python" />
-                    <div class="technology-blurb">Python: High-level programming language for general-purpose coding</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={csharpImage} alt="C#" />
-                    <div class="technology-blurb">C#: A language developed by Microsoft for building apps on .NET</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={reactImage} alt="React" />
-                    <div class="technology-blurb">React: JavaScript library for building user interfaces</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={nodejsImage} alt="Node.js" />
-                    <div class="technology-blurb">Node.js: JavaScript runtime for building scalable network apps</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={sqlImage} alt="SQL" />
-                    <div class="technology-blurb">SQL: Language for managing and querying databases</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={powershellImage} alt="PowerShell" />
-                    <div class="technology-blurb">PowerShell: Task automation framework from Microsoft</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={dockerImage} alt="Docker" />
-                    <div class="technology-blurb">Docker: Platform for developing and deploying containerized apps</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={cplusplusImage} alt="C++" />
-                    <div class="technology-blurb">C++: High-performance language for system/software development</div>
-                </div>
-    
-                <!-- Duplicate Images and their Blurbs -->
-                <div class="technology-item">
-                    <Image src={htmlImage} alt="HTML" />
-                    <div class="technology-blurb">HTML: A markup language for creating web pages</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={cssImage} alt="CSS" />
-                    <div class="technology-blurb">CSS: Style sheet language for designing web pages</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={javascriptImage} alt="JavaScript" />
-                    <div class="technology-blurb">JavaScript: Programming language for web development</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={typescriptImage} alt="TypeScript" />
-                    <div class="technology-blurb">TypeScript: A superset of JavaScript with static types</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={pythonImage} alt="Python" />
-                    <div class="technology-blurb">Python: High-level programming language for general-purpose coding</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={csharpImage} alt="C#" />
-                    <div class="technology-blurb">C#: A language developed by Microsoft for building apps on .NET</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={reactImage} alt="React" />
-                    <div class="technology-blurb">React: JavaScript library for building user interfaces</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={nodejsImage} alt="Node.js" />
-                    <div class="technology-blurb">Node.js: JavaScript runtime for building scalable network apps</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={sqlImage} alt="SQL" />
-                    <div class="technology-blurb">SQL: Language for managing and querying databases</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={powershellImage} alt="PowerShell" />
-                    <div class="technology-blurb">PowerShell: Task automation framework from Microsoft</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={dockerImage} alt="Docker" />
-                    <div class="technology-blurb">Docker: Platform for developing and deploying containerized apps</div>
-                </div>
-                <div class="technology-item">
-                    <Image src={cplusplusImage} alt="C++" />
-                    <div class="technology-blurb">C++: High-performance language for system/software development</div>
+<html>
+    <head>
+    <div id="container">
+        <div id="title">
+            <h1>Ryan O'Regan</h1>
+            <a href="https://github.com/ryanoregan" target="_blank" rel="noopener noreferrer">
+                <Image id="githubLogo" src={githubImage} alt="GitHub logo" />
+            </a>
+            <p>📍Christchurch, New Zealand</p>
+        </div>
+        <div id="copyEmailButton">
+            <CopyEmailButton client:load/>
+            <a class="buttonStyle" href="example.com" target="_blank">About</a>
+            <a class="buttonStyle" href="https://www.linkedin.com/in/ryan-o-regan-67b55025b/" target="_blank">LinkedIn</a>
+            <a class="buttonStyle" href="https://www.instagram.com/rybeeee/" target="_blank">Instagram</a>
+            <a class="buttonStyle" href="https://leetcode.com/u/Ryan_ORegan/" target="_blank">LeetCode</a>
+        </div>
+        <div id ="intro">
+            <h1>👋 Hi there!</h1>
+            <p>Hi! I'm Ryan, and I'm a Data Technician at Elixir. I am pursuing my dream of being a full stack software engineer and graduated in November 2024 with a Graduate Diploma in ICT specialising in Software Engineering.</p>
+        </div>
+        <div id="stacks">
+            <h1>🛠️ My Tech Stacks</h1>
+            <h3>LAMP</h3>
+            <ul>
+                <li>Linux</li>
+                <li>Apache</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+        <div id="technologies">
+            <h2>📟 All Technologies</h2>
+            <div class="technologyImages">
+                <div class="inner-wrapper">
+                    <!-- Original Images and their Blurbs -->
+                    <div class="technology-item">
+                        <Image src={htmlImage} alt="HTML" />
+                        <div class="technology-blurb">HTML: A markup language for creating web pages</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={cssImage} alt="CSS" />
+                        <div class="technology-blurb">CSS: Style sheet language for designing web pages</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={javascriptImage} alt="JavaScript" />
+                        <div class="technology-blurb">JavaScript: Programming language for web development</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={typescriptImage} alt="TypeScript" />
+                        <div class="technology-blurb">TypeScript: A superset of JavaScript with static types</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={pythonImage} alt="Python" />
+                        <div class="technology-blurb">Python: High-level programming language for general-purpose coding</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={csharpImage} alt="C#" />
+                        <div class="technology-blurb">C#: A language developed by Microsoft for building apps on .NET</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={reactImage} alt="React" />
+                        <div class="technology-blurb">React: JavaScript library for building user interfaces</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={nodejsImage} alt="Node.js" />
+                        <div class="technology-blurb">Node.js: JavaScript runtime for building scalable network apps</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={sqlImage} alt="SQL" />
+                        <div class="technology-blurb">SQL: Language for managing and querying databases</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={powershellImage} alt="PowerShell" />
+                        <div class="technology-blurb">PowerShell: Task automation framework from Microsoft</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={dockerImage} alt="Docker" />
+                        <div class="technology-blurb">Docker: Platform for developing and deploying containerized apps</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={cplusplusImage} alt="C++" />
+                        <div class="technology-blurb">C++: High-performance language for system/software development</div>
+                    </div>
+        
+                    <!-- Duplicate Images and their Blurbs -->
+                    <div class="technology-item">
+                        <Image src={htmlImage} alt="HTML" />
+                        <div class="technology-blurb">HTML: A markup language for creating web pages</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={cssImage} alt="CSS" />
+                        <div class="technology-blurb">CSS: Style sheet language for designing web pages</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={javascriptImage} alt="JavaScript" />
+                        <div class="technology-blurb">JavaScript: Programming language for web development</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={typescriptImage} alt="TypeScript" />
+                        <div class="technology-blurb">TypeScript: A superset of JavaScript with static types</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={pythonImage} alt="Python" />
+                        <div class="technology-blurb">Python: High-level programming language for general-purpose coding</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={csharpImage} alt="C#" />
+                        <div class="technology-blurb">C#: A language developed by Microsoft for building apps on .NET</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={reactImage} alt="React" />
+                        <div class="technology-blurb">React: JavaScript library for building user interfaces</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={nodejsImage} alt="Node.js" />
+                        <div class="technology-blurb">Node.js: JavaScript runtime for building scalable network apps</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={sqlImage} alt="SQL" />
+                        <div class="technology-blurb">SQL: Language for managing and querying databases</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={powershellImage} alt="PowerShell" />
+                        <div class="technology-blurb">PowerShell: Task automation framework from Microsoft</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={dockerImage} alt="Docker" />
+                        <div class="technology-blurb">Docker: Platform for developing and deploying containerized apps</div>
+                    </div>
+                    <div class="technology-item">
+                        <Image src={cplusplusImage} alt="C++" />
+                        <div class="technology-blurb">C++: High-performance language for system/software development</div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        
+
+        <aside>
+            <h2>👾 Projects</h2>
+            <p>Below you can find examples of projects I have worked on either through my studies or personal interest.</p>
+            <p>E-Commerce Prototype - Agora</p>
+            <div class="projectImage">
+                <Image src={agoraImage} alt="Agora">
+            </div>
+            <p>ChessMaze Game</p>
+            <div class="projectImage">
+                <Image src={chessMazeImage} alt="chessMaze">
+            </div>
+            <p>Workout App</p>
+            <div class="projectImage">
+                <Image src={workoutAppImage} alt="workoutApp">
+            </div>
+        </aside>
+        
     </div>
-    
-    
 
-    <aside>
-        <h2>👾 Projects</h2>
-        <p>Below you can find examples of projects I have worked on either through my studies or personal interest.</p>
-        <p>E-Commerce Prototype - Agora</p>
-        <div class="projectImage">
-            <Image src={agoraImage} alt="Agora">
-        </div>
-        <p>ChessMaze Game</p>
-        <div class="projectImage">
-            <Image src={chessMazeImage} alt="chessMaze">
-        </div>
-        <p>Workout App</p>
-        <div class="projectImage">
-            <Image src={workoutAppImage} alt="workoutApp">
-        </div>
-    </aside>
-    
-</div>
+    <style>
 
-<style>
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 28rem 28rem 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 1rem;
+            width: 100%;
+        }
 
-    #container{
-        display: grid;
-        grid-template-columns: 1fr 28rem 28rem 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-gap: 1rem;
-        width: 100%;
-    }
+        #title {
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-self: center;
+            text-align: center;
+            font-size: 36px;
+            
+            margin-top: 20px;
+            margin-bottom: 25px;
+            padding: 0px 15px 0px 20px; /* Adds space inside the box */
+            background-color: hsl(224, 14%, 14%); /* Dark background for the box */
+            border-radius: 12px; /* Rounds the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
+            outline-style: groove;
+            outline-width: 0.1px;
+            outline-color: rgba(255, 255, 255, 0.4);
+        }
 
-    #title {
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-self: center;
-        text-align: center;
-        font-size: 36px;
+        #title p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6); 
+            margin-top: 14px;
+        }
+
+        #copyEmailButton {
+            grid-column: 2 / 4; /* Place it in the center columns */
+            justify-self: left; /* Align it horizontally */
+            align-self: center; /* Align it vertically */
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-bottom: 40px;
+
+            .copyEmailButton {
+            padding: 12px 15px;
+            background-color:  hsl(224, 20%, 20%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 8px;
+            white-space: nowrap;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .copyEmailButton svg {
+            width: 15px; /* Set a fixed size for the icon */
+            height: 15px;
+        }
+
+        .copyEmailButton:hover{
+            background-color:  hsl(224, 30%, 30%);
+        }
         
-        margin-top: 20px;
-        margin-bottom: 25px;
-        padding: 0px 15px 0px 20px; /* Adds space inside the box */
-        background-color: hsl(224, 14%, 14%); /* Dark background for the box */
-        border-radius: 12px; /* Rounds the corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
-        outline-style: groove;
-        outline-width: 0.1px;
-        outline-color: rgba(255, 255, 255, 0.4);
-    }
-
-    #title p {
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.6); 
-        margin-top: 14px;
-    }
-
-    #copyEmailButton {
-        grid-column: 2 / 4; /* Place it in the center columns */
-        justify-self: left; /* Align it horizontally */
-        align-self: center; /* Align it vertically */
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        margin-bottom: 40px;
-
-        .copyEmailButton {
-        padding: 12px 15px;
-        background-color:  hsl(224, 20%, 20%);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        gap: 8px;
-        white-space: nowrap;
-        font-family:'Courier New', Courier, monospace;
-    }
-
-    .copyEmailButton svg {
-        width: 15px; /* Set a fixed size for the icon */
-        height: 15px;
-    }
-
-    .copyEmailButton:hover{
-        background-color:  hsl(224, 30%, 30%);
-    }
-    
-    .copied {
-        position: absolute;
-        margin-top: 15px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .buttonStyle {
-        padding: 10px 20px;
-        background-color:  hsl(224, 20%, 20%);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        gap: 8px;
-        white-space: nowrap;
-        font-family:'Courier New', Courier, monospace;
-        text-decoration: none;
-    }
-
-    .buttonStyle:hover{
-        background-color:  hsl(224, 30%, 30%);
-    }
-
-    }
-
-
-    #intro {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-        margin-top: 20px;
-        max-height: 200px; /* Makes the box shorter than the aside box */
-
-        padding: 0px 50px 0px 25px; /* Adds space inside the box */
-        background-color: hsl(224, 14%, 14%); /* Dark background for the box */
-        border-radius: 12px; /* Rounds the corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
-        outline-style: groove;
-        outline-width: 0.1px;
-        outline-color: rgba(255, 255, 255, 0.4);
-    }
-
-    #intro p {
-        color: rgba(255, 255, 255, 0.6);  
-    }
-
-    #intro:hover {
-        outline-color:rgba(255, 255, 255, 1);
-        transition: outline-width 0.5s ease, outline-color 0.5s ease;
-        box-shadow:  0 4px 32px rgba(0, 0, 0, 2);
-    }
-
-    #githubLogo {
-        width: 70px;
-        height: 70px;
-        margin-top: 60px;
-        margin-left: 25px;
-        border-radius: 50%; /* Make the image circular */
-        overflow: hidden; /* Ensure content within the circle doesn't overflow */
-    }
-
-    #githubLogo:hover {
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Tighter shadow with less spread */
-        z-index: 10; /* Bring the hovered image to the front */
-        position: relative; /* Ensure it transcends its default stacking */
-        transform: scale(1.1); /* Slight scale up to highlight */
-    }
-
-    #stacks {
-        margin-top: 220px;
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-
-        width: 100%; /* Ensure it takes up the full width of column 2 */
-        overflow: hidden; /* Hide overflow so the images don’t go outside the container */
-    }
-
-    #stacks ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    #stacks li {
-        list-style-type: none;
-    }
-
-    #technologies {
-        margin-top: 400px;
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-        width: 100%; /* Ensure it takes up the full width of column 2 */
-        overflow: hidden; /* Hide overflow so the images don’t go outside the container */
-        padding-bottom: 200px;
-    }
-
-    .technologyImages {
-        display: flex;
-        overflow: visible; /* Allow images to overflow the container */
-        position: relative;
-        width: 100%;
-        padding: 10px 0; /* Add some space to avoid initial overlap */
-    }
-
-    .technologyImages .inner-wrapper {
-        display: flex;
-        animation: scrollTechnologies 20s linear infinite; /* Seamless, infinite scrolling */
-    }
-
-    .technologyImages::after {
-        content: "";
-        display: block;
-        width: 100%; /* Fill the empty space */
-    }
-
-    .technologyImages .technology-item {
-        position: relative;
-        margin: 0 10px; /* Space between the images */
-        text-align: center;
-    }
-
-    .technologyImages img {
-        width: 100px; /* Base size of images */
-        height: 100px;
-        object-fit: contain;
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
-        will-change: transform; /* Optimize the hover animation */
-    }
-
-    .technologyImages img:hover {
-        transform: scale(1.5); /* Enlarge the image */
-        z-index: 10; /* Bring the hovered image to the front */
-        position: relative; /* Ensure it transcends its default stacking */
-    }
-
-    .technologyImages .technology-blurb {
-        position: absolute;
-        bottom: -150px; /* Position the blurb below the image */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-        opacity: 0;
-        visibility: hidden;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-    .technologyImages .technology-item:hover .technology-blurb {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* Pause animation on hover */
-    .technologyImages:hover .inner-wrapper {
-        animation-play-state: paused;
-    }
-
-    @keyframes scrollTechnologies {
-        from {
-            transform: translateX(0); /* Start off-screen to the right */
+        .copied {
+            position: absolute;
+            margin-top: 15px;
+            font-family: 'Courier New', Courier, monospace;
         }
-        to {
-            transform: translateX(-50%); /* Move off-screen to the left */
-        }
-    }
 
-    aside {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-        padding: 10px;
-        margin-top: 70px;
-        height: 600px; /* Set a fixed height for the aside */
-        overflow-y: auto; /* Enable vertical scrolling */
-        padding: 20px; /* Optional padding */
-        border: 1px solid #ddd; /* Optional border */
-        background-color: #f9f9f9; /* Optional background color */
+        .buttonStyle {
+            padding: 10px 20px;
+            background-color:  hsl(224, 20%, 20%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 8px;
+            white-space: nowrap;
+            font-family:'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+
+        .buttonStyle:hover{
+            background-color:  hsl(224, 30%, 30%);
+        }
+
+        }
+
+
+        #intro {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            margin-top: 20px;
+            max-height: 200px; /* Makes the box shorter than the aside box */
+
+            padding: 0px 50px 0px 25px; /* Adds space inside the box */
+            background-color: hsl(224, 14%, 14%); /* Dark background for the box */
+            border-radius: 12px; /* Rounds the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
+            outline-style: groove;
+            outline-width: 0.1px;
+            outline-color: rgba(255, 255, 255, 0.4);
+        }
+
+        #intro p {
+            color: rgba(255, 255, 255, 0.6);  
+        }
+
+        #intro:hover {
+            outline-color:rgba(255, 255, 255, 1);
+            transition: outline-width 0.5s ease, outline-color 0.5s ease;
+            box-shadow:  0 4px 32px rgba(0, 0, 0, 2);
+        }
+
+        #githubLogo {
+            width: 70px;
+            height: 70px;
+            margin-top: 60px;
+            margin-left: 25px;
+            border-radius: 50%; /* Make the image circular */
+            overflow: hidden; /* Ensure content within the circle doesn't overflow */
+        }
+
+        #githubLogo:hover {
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Tighter shadow with less spread */
+            z-index: 10; /* Bring the hovered image to the front */
+            position: relative; /* Ensure it transcends its default stacking */
+            transform: scale(1.1); /* Slight scale up to highlight */
+        }
+
+        #stacks {
+            margin-top: 220px;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+
+            width: 100%; /* Ensure it takes up the full width of column 2 */
+            overflow: hidden; /* Hide overflow so the images don’t go outside the container */
+        }
+
+        #stacks ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        #stacks li {
+            list-style-type: none;
+        }
+
+        #technologies {
+            margin-top: 400px;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            width: 100%; /* Ensure it takes up the full width of column 2 */
+            overflow: hidden; /* Hide overflow so the images don’t go outside the container */
+            padding-bottom: 200px;
+        }
+
+        .technologyImages {
+            display: flex;
+            overflow: visible; /* Allow images to overflow the container */
+            position: relative;
+            width: 100%;
+            padding: 10px 0; /* Add some space to avoid initial overlap */
+        }
+
+        .technologyImages .inner-wrapper {
+            display: flex;
+            animation: scrollTechnologies 20s linear infinite; /* Seamless, infinite scrolling */
+        }
+
+        .technologyImages::after {
+            content: "";
+            display: block;
+            width: 100%; /* Fill the empty space */
+        }
+
+        .technologyImages .technology-item {
+            position: relative;
+            margin: 0 10px; /* Space between the images */
+            text-align: center;
+        }
+
+        .technologyImages img {
+            width: 100px; /* Base size of images */
+            height: 100px;
+            object-fit: contain;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+            will-change: transform; /* Optimize the hover animation */
+        }
+
+        .technologyImages img:hover {
+            transform: scale(1.5); /* Enlarge the image */
+            z-index: 10; /* Bring the hovered image to the front */
+            position: relative; /* Ensure it transcends its default stacking */
+        }
+
+        .technologyImages .technology-blurb {
+            position: absolute;
+            bottom: -150px; /* Position the blurb below the image */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            opacity: 0;
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .technologyImages .technology-item:hover .technology-blurb {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Pause animation on hover */
+        .technologyImages:hover .inner-wrapper {
+            animation-play-state: paused;
+        }
+
+        @keyframes scrollTechnologies {
+            from {
+                transform: translateX(0); /* Start off-screen to the right */
+            }
+            to {
+                transform: translateX(-50%); /* Move off-screen to the left */
+            }
+        }
+
+        aside {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            padding: 10px;
+            margin-top: 70px;
+            height: 600px; /* Set a fixed height for the aside */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px; /* Optional padding */
+            border: 1px solid #ddd; /* Optional border */
+            background-color: #f9f9f9; /* Optional background color */
+            
         
-    
-        padding: 0px 50px 10px 25px; /* Adds space inside the box */
-        background-color: hsl(224, 14%, 14%); /* Dark background for the box */
-        border-radius: 12px; /* Rounds the corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
-        outline-style: groove;
-        outline-width: 0.1px;
-        outline-color: rgba(255, 255, 255, 0.4);
-    }
-    
-    aside:hover {
-        outline-color:rgba(255, 255, 255, 1);
-        transition: outline-width 0.5s ease, outline-color 0.5s ease;
-        box-shadow:  0 4px 32px rgba(0, 0, 0, 2);
-    }
-
-    aside h2 {
-        text-align: center;
-        font-size: 34px;
-    }
-
-    aside p {
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-    .projectImage {
-        outline-color:rgba(255, 255, 255, 0.2);
-        outline-width: 3px;
-        outline-style: groove;
-        margin-bottom: 20px; /* Space between projects */
-    }
-
-    aside img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #technologies h2 {
-        text-align: center;
-        font-size: 34px;
-    }
-
-
-    body {
-        background-color: #2b2b2b; /* Dark background color for the body */
-        color: #fff; /* Light text color for contrast */
-        font-family: 'Rubik';
-
-        background-image: 
-        repeating-linear-gradient(to bottom, transparent, transparent 30px, rgba(255, 255, 255, 0.1) 30px, rgba(255, 255, 255, 0.1) 31px), /* Subtle background lines */
-        repeating-linear-gradient(to right, transparent, transparent 30px, rgba(255, 255, 255, 0.1) 30px, rgba(255, 255, 255, 0.1) 31px); /* Subtle background lines */
-    
-        background-repeat: no-repeat;
-        background-color: hsl(224, 10%, 10%); /* Darker background color */
-        background-size: 100% 100%; /* Adjusts to fill the element */
-        width: 100%;
-        height: 100%;
-        animation: gridWipe 1s linear; /* Animation for grid expansion */
-    }
-
-    @keyframes gridWipe {
-        0% {
-            background-size: 0 0;
+            padding: 0px 50px 10px 25px; /* Adds space inside the box */
+            background-color: hsl(224, 14%, 14%); /* Dark background for the box */
+            border-radius: 12px; /* Rounds the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow around the box */
+            outline-style: groove;
+            outline-width: 0.1px;
+            outline-color: rgba(255, 255, 255, 0.4);
         }
-        100% {
-            background-size: 100% 100%;
+        
+        aside:hover {
+            outline-color:rgba(255, 255, 255, 1);
+            transition: outline-width 0.5s ease, outline-color 0.5s ease;
+            box-shadow:  0 4px 32px rgba(0, 0, 0, 2);
         }
-    }
+
+        aside h2 {
+            text-align: center;
+            font-size: 34px;
+        }
+
+        aside p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .projectImage {
+            outline-color:rgba(255, 255, 255, 0.2);
+            outline-width: 3px;
+            outline-style: groove;
+            margin-bottom: 20px; /* Space between projects */
+        }
+
+        aside img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #technologies h2 {
+            text-align: center;
+            font-size: 34px;
+        }
 
 
-</style>
+        body {
+            background-color: #2b2b2b; /* Dark background color for the body */
+            color: #fff; /* Light text color for contrast */
+            font-family: 'Rubik';
+
+            background-image: 
+            repeating-linear-gradient(to bottom, transparent, transparent 30px, rgba(255, 255, 255, 0.1) 30px, rgba(255, 255, 255, 0.1) 31px), /* Subtle background lines */
+            repeating-linear-gradient(to right, transparent, transparent 30px, rgba(255, 255, 255, 0.1) 30px, rgba(255, 255, 255, 0.1) 31px); /* Subtle background lines */
+        
+            background-repeat: no-repeat;
+            background-color: hsl(224, 10%, 10%); /* Darker background color */
+            background-size: 100% 100%; /* Adjusts to fill the element */
+            width: 100%;
+            height: 100%;
+            animation: gridWipe 1s linear; /* Animation for grid expansion */
+        }
+
+        @keyframes gridWipe {
+            0% {
+                background-size: 0 0;
+            }
+            100% {
+                background-size: 100% 100%;
+            }
+        }
+
+
+        </style>
+    </head>
+</html>
