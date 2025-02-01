@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function copyEmailButton() {
+export default function CopyEmailButton() {
 
     const [copy, setCopy] = useState(false);
 
