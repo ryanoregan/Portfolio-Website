@@ -3,8 +3,6 @@
     <p>&copy 2024 All rights reserved.</p>
 </footer>
 
-
-
 <style>
     footer {
         background-color: hsl(224, 14%, 14%);
@@ -25,8 +23,16 @@
     }
 
     footer p {
-    margin: 3px; /* Remove the default margin between p tags */
-    padding: 0; /* Remove any padding if needed */
+        margin: 3px; /* Remove the default margin between p tags */
+        padding: 0; /* Remove any padding if needed */
+    }
+
+    
+    @media screen and (max-width: 570px) {
+
+        footer {
+            display: none;
+        }
     }
 
 </style>
